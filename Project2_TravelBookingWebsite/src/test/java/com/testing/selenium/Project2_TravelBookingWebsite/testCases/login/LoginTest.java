@@ -6,18 +6,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeMethod;
 
 import com.testing.selenium.Project2_TravelBookingWebsite.base.TestBase;
-import com.testing.selenium.Project2_TravelBookingWebsite.pageObjectDesign.header.HeaderLinks;
+import com.testing.selenium.Project2_TravelBookingWebsite.pageObjectDesign.header.HeaderPage;
 import com.testing.selenium.Project2_TravelBookingWebsite.pageObjectDesign.login.LoginPage;
 
 public class LoginTest extends TestBase {
 
 	public LoginPage login;
-	public HeaderLinks header;
+	public HeaderPage header;
 	public Alert alert;
 
 	@BeforeMethod
 	public void atTestStart() {
-		header = new HeaderLinks(driver);
+		header = new HeaderPage(driver);
 		login = new LoginPage(driver);
 	}
 

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testing.selenium.Project2_TravelBookingWebsite.testCases.signUp.SignUpTest">
+      <class name="com.testing.selenium.Project2_TravelBookingWebsite.testCases.endToEndTesting.MainTest">
         <methods>
-          <include name="TC_SIGNUP_01"/>
           <include name="atTestStart"/>
           <include name="atClassStart"/>
+          <include name="mainTest"/>
           <include name="atClassEnd"/>
         </methods>
-      </class> <!-- com.testing.selenium.Project2_TravelBookingWebsite.testCases.signUp.SignUpTest -->
+      </class> <!-- com.testing.selenium.Project2_TravelBookingWebsite.testCases.endToEndTesting.MainTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

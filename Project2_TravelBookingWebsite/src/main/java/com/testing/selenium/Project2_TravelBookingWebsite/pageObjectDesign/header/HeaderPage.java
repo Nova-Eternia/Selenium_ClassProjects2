@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HeaderLinks {
+public class HeaderPage {
 	public WebDriver driver;
 	
-	public HeaderLinks(WebDriver driver) {
+	public HeaderPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
