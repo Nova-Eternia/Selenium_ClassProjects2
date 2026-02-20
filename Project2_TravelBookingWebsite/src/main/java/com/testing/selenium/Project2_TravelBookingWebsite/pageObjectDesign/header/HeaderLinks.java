@@ -1,0 +1,44 @@
+package com.testing.selenium.Project2_TravelBookingWebsite.pageObjectDesign.header;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HeaderLinks {
+	public WebDriver driver;
+	
+	public HeaderLinks(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//a[text()='Home']")
+	WebElement home;
+	
+	@FindBy(xpath="//a[text()='Packages']")
+	WebElement packages;
+	
+	@FindBy(xpath="//a[text()='About']")
+	WebElement about;
+	
+	@FindBy(xpath="//a[text()='Login']")
+	WebElement login;
+
+	public void clickHomeAtTop() {
+		home.click();
+	}
+	
+	public void clickPackagesAtTop() {
+		packages.click();
+	}
+	
+	public void clickAboutAtTop() {
+		about.click();
+	}
+	
+	public void clickLoginAtTop() {
+		login.click();
+	}
+	
+}
