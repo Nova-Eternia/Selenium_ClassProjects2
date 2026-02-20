@@ -2,7 +2,7 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="listeners.TestListeners"/>
+		<listener class-name="com.testing.selenium.Project2_TravelBookingWebsite.listeners.TestListeners"/>
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
